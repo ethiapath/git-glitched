@@ -6,20 +6,45 @@
   "scripts": {
     "start": "node server.js"
   },
-  "dependencies": {
-    "express": "^4.16.3"
-  },
-  "engines": {
-    "node": "8.x"
-  },
   "repository": {
-    "url": "https://github.com/noise-machines/git-glitched"
+    "url": "https://github.com/ethiapath/complete-debt"
   },
-  "license": "MIT",
-  "keywords": [
-    "node",
-    "glitch",
-    "express",
-    "git"
-  ]
+	"devDependencies": {
+		"babel": "latest",
+		"babel-core": "latest",
+		"babel-loader": "latest",
+		"babel-preset-es2015": "latest",
+		"babel-preset-react": "latest",
+		"webpack": "latest",
+		"webpack-dev-server": "latest",
+		"babel-plugin-transform-react-jsx": "latest",
+		"babel-plugin-transform-class-properties": "^6.23.0",
+		"babel-plugin-syntax-class-properties": "^6.13.0"
+	},
+	"dependencies": {
+		"preact": "7.2.1",
+		"preact-router": "^2.3.2",
+		"smitty": "^2.0.1",
+		"preact-smitty": "^1.0.1",
+		"mitt": "^1.1.0"
+	},
+	"engines": {
+		"node": "6.9.x"
+	},
+	"babel": {
+		"plugins": [
+			[
+				"transform-react-jsx",
+				{
+					"pragma": "h"
+				},
+				"syntax-class-properties",
+				"transform-class-properties",
+				{
+					"spec": true
+				}
+			]
+		]
+	},
+	"license": "MIT"
 }

@@ -31,6 +31,6 @@ app.post('/deploy', (request, response) => {
   response.status(200).send()
 })
 
-const listener = app.listen(process.env.PORT, function() {
-  console.log('Your app is listening on port ' + listener.address().port);
+const listener = app.listen(process.env.PORT, function () {
+  console.log('Your app is listening on port ' + listener.address().port)
 })
